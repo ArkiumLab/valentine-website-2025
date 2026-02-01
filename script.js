@@ -51,7 +51,7 @@ function getDefaultColor(key) {
 }
 
 // Set page title
-document.title = config.valentineName;
+document.title = config.pageTitle;
 
 // Initialize the page content when DOM is loaded
 window.addEventListener('DOMContentLoaded', () => {
@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     validateConfig();
 
     // Set texts from config
-    document.getElementById('valentineTitle').textContent = config.valentineName;
+    document.getElementById('valentineTitle').textContent = `${config.valentineName}, my love...`;
     
     // Set first question texts
     document.getElementById('question1Text').textContent = config.questions.first.text;
